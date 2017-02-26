@@ -1,42 +1,115 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<script type="text/javascript">
-window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer",
-	{
-		title:{
-			text: "Strategic talking points"
-		},
-		exportFileName: "Pie Chart",
-		exportEnabled: true,
-                animationEnabled: true,
-		legend:{
-			verticalAlign: "bottom",
-			horizontalAlign: "center"
-		},
-		data: [
-		{
-			type: "pie",
-			showInLegend: true,
-			toolTipContent: "{name}: <strong>{y}%</strong>",
-			indexLabel: "{name} {y}%",
-			dataPoints: [
-				{  y: 15, name: "jQuery" },
-              {  y: 55, name: "HTML & CSS",exploded: true },
-				{  y: 15, name: "C",exploded: true},
-				{  y: 15, name: "C++"},
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-			]
-	}
-	]
-	});
-	chart.render();
+<script type="text/javascript"></script>
+<script type="text/javascript" src="/assets/script/canvasjs.min.js"></script></head>
+  <style>
+  h3 {
+      text-align: center;
+  }
+  #search{
+    text-align: center;
+    align-content: center;
+  }
+ body {
+  margin-top: 60px;
 }
-</script>
-</head>
-<body>
-<div id="chartContainer" style="height: 300px; width: 100%;"></div>
-</body>
+
+</style>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Coderstrust</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#SpaceX success Story">SpaceX <span class="sr-only">(current)</span></a></li>
+
+
+      <form class="navbar-form navbar-left">
+        <div id="search" class="form-group">
+          <input  type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <centre>
+      <div class="col-xs-12">
+        <h1 class="text-center">Elon Musk</h1>
+        <h2 class="text-center"><em>The entrepreneurial Genius </em></h2>
+        <div class="thumbnail"><img src="http://az616578.vo.msecnd.net/files/2016/07/02/636030757259556361-1129479309_elon-musk.jpg">
+          <div class="caption text-center">Business magnate, Investor, Engineer, and Inventor</div>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ">
+          <h3 class="text-centre">The man and his life</h3>
+        </div>
+           <div class="row">
+             <div class="col-xs-6">
+             <h3>  <strong><a name= "SpaceX success Story"></a>SpaceX success Story</strong> </h3>
+                 <p>Elon Musk’s SpaceX rocket touches back down at Cape Canaveral after mission to the International Space Station
+The Falcon 9 spacecraft made history by arriving back on Earth after delivering supplies to astronauts orbiting the planet</p>
+             </div>
+                  <div class="col-xs-6">
+                    <h3>  <strong> Tesla Motors</strong> </h3>
+                    <p>By September 2014 the car hit all-time sales records in the U.S. with 2,500 sold, and in Q1 2015 sales reached a new high at 10,030. It is now considered a staple within the electric car stratosphere. The company’s market capitalization, as of May 24, 2015 was $31.3 billion.
+
+Read more: The Story Behind Tesla's Success (TSLA) |
+Follow us: Investopedia on Facebook</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="thumbnail"><img src="http://www.spacex.com/sites/spacex/files/16855243811_560edaae19_o.jpg">
+                    </div>
+                  </div>
+                    <div class="col-xs-4">
+                      <div class="thumbnail"><img src="http://www.car-brand-names.com/wp-content/uploads/2015/05/Tesla-Motors-symbol.png">
+                      </div>
+                    </div>
+                      <div class="col-xs-4">
+                        <div class="thumbnail"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/v1425493926/uazitd0cpj8dafeobjii.jpg">
+                        </div>
+                      </div>
+                      </div>
+          <blockquote>
+            <p>"Failure is not an option, Success is not a choice"</p>
+            <footer><cite>Anonymous</cite></footer>
+          </blockquote>
+          <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">Wikipedia entry</a></h3>
+        </div>
+      </div>
+    </centre>
+    </div>
+  </div>
+  <footer class="text-center">
+    <hr>
+    <p>Work by Rahul Krishnan</p>
+  </footer>
+  <script type="text/javascript">
+  $("a").css("color","black");
+  $("a").css("font-weight","bold");
+  </script>
+</div>
 </html>
