@@ -481,3 +481,15 @@ header h1 {
     transform: translateX(0);
   }
 }
+
+
+@media only screen and (min-width: 1170px) {
+  #cd-intro {
+    position: fixed;
+    top: 70px;
+    left: 0;
+  }
+  #cd-intro .cd-intro-background {
+    transform-origin: 50% 100%;
+  }
+}
