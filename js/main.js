@@ -24,13 +24,4 @@ jQuery(document).ready(function($){
 		});
 	}
 });
-function triggerAnimation(){
-	if($(window).width()>= MQ) {
-		$(window).on('scroll', function(){
-			//The window.requestAnimationFrame() method tells the browser that you wish to perform an animation- the browser can optimize it so animations will be smoother
-			window.requestAnimationFrame(animateIntro);
-		});
-	} else {
-		$(window).off('scroll');
-	}
-}
+
