@@ -15,7 +15,45 @@
 
 		background: url('/home/rahul/Documents/rahulkde.github.io/rahul.jpg') no-repeat center center fixed;
  }
+ #cd-timeline {
+   position: relative;
+   padding: 2em 0;
+   margin-top: 2em;
+   margin-bottom: 2em;
+ }
+ #cd-timeline::before {
+   /* this is the vertical line */
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 18px;
+   height: 100%;
+   width: 4px;
+   background: #d7e4ed;
+ }
+ .cssanimations .cd-timeline-img.is-hidden {
+  visibility: hidden;
+}
+.cssanimations .cd-timeline-img.bounce-in {
+  visibility: visible;
+  animation: cd-bounce-1 0.6s;
+}
 
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 </style>
 <nav  class="navbar navbar-inverse ">
 	 <div class="container-fluid1">
@@ -48,6 +86,23 @@
 	 </div>
  </nav>
  <body>
+   <section id="cd-timeline">
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img">
+			<img src="img/cd-icon-picture.svg" alt="Picture">
+		</div> <!-- cd-timeline-img -->
 
-			 </body>
-			 </html>
+		<div class="cd-timeline-content">
+			<h2>Title of section 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+			<a href="#0" class="cd-read-more">Read more</a>
+			<span class="cd-date">Jan 14</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+
+	<div class="cd-timeline-block">
+		<!-- ... -->
+	</div>
+</section>
+ </body>
+</html>
