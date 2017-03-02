@@ -2,8 +2,12 @@
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -38,8 +42,18 @@ background-repeat: no-repeat center center fixed;
   -o-background-size: cover;
   background-size: cover;
 }
+.img-circle{
+	max-height: 100px;
+	max-width: 100px;
+	border-radius: 50%;
 
-</style>
+}
+
+
+ </style>
+
+
+
 <body>
 	<nav  class="navbar navbar-inverse">
 		 <div class="container-fluid1">
@@ -71,13 +85,17 @@ background-repeat: no-repeat center center fixed;
 	 </div>
 		 </div>
 	 </nav>
+	 <div class="container-fluid">
 	 <div id="header"class="row">
-		 <div clas="col-xs-12">
-	 <div id="divback">
-		 img back here
-	 </div>
+		   <div clas="col-xs-12">
+	       <div id="divback">
+		     <div id="myimg">
+	        <img class="img-circle" src="rahul.jpg" alt="Picture">
+        </div>
+ 	    </div>
+    </div>
  </div>
- </div>
+</div>
 
 </section>
 	<section id="cd-timeline" class="cd-container">
@@ -159,9 +177,14 @@ background-repeat: no-repeat center center fixed;
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
-	<div id="chart-container">
+
+	<div id="container">
+	 <div id="inner-container">
+	<div class="inner" id="chart-container">
   FusionCharts will render here
  </div>
+</div>
+</div>
 
 <script type="text/javascript">
 function()
