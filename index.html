@@ -15,6 +15,17 @@
       <meta name="page-source" site="//sites.simbla.com/6d10781b-0cf5-bb7a-cbf6-5bbb0a5fa2fa" page="home" site-id="58b7ea1895a103b67f576777" page-id="58b7ea344e2bc8267b9dac7d" master-page-id="">
       <link rel="canonical" href="index.html">
    </head>
+   <style>
+   #carousel-inner{
+     height: 700px;
+    width: 100%
+   }
+   .item{
+     height: 700px;
+    width: 100%
+   }
+
+   </style>
    <body data-spy="scroll" data-target=".navbar-collapse" class="static-page">
      <div id="windowDiv">
         <div id="MarginsTop" style="height: 0px;" class="row"></div>
@@ -71,6 +82,46 @@
                  </div>
               </div>
            </div>
+           <! Carousel here-->
+           <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             <a class="simblaEL anchorElm" data-drag="divCounter" name="Content0" id="Content0"></a>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="dev-1.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="dev-1.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="divback.jpeg" alt="Flower">
+    </div>
+
+    <div class="item">
+      <img src="misc/space.jpg" alt="Flower">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
            <! Footer from here-->
            <div class="simblaEL simblaBlock footerBlock footer3 containerHolder" data-drag="P148" id="P148" style="">
               <a class="simblaEL anchorElm" data-drag="divCounter" name="Footer0" id="Footer0"></a>
